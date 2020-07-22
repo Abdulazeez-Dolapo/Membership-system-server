@@ -32,7 +32,7 @@ class AuthController {
 				username: req.body.username,
 			})
 			if (foundUser) {
-				res.json({
+				return res.json({
 					success: false,
 					message: "Member with the username already exists",
 				})
